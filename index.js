@@ -1,15 +1,15 @@
 
 const homeScoreEl = document.getElementById('home-score');
-const guestScoreEl = document.getElementById('guest-score');
+const awayScoreEl = document.getElementById('away-score');
 
 const homeButtons = document.querySelectorAll('.container div:nth-child(1) .increment');
 
 
-const guestButtons = document.querySelectorAll('.container div:nth-child(2) .increment');
+const awayButtons = document.querySelectorAll('.container div:nth-child(2) .increment');
 
 
 let homeScore = 0;
-let guestScore = 0;
+let awayScore = 0;
 
 homeButtons[0].addEventListener('click', function() {
     homeScore += 1;
@@ -28,19 +28,19 @@ homeButtons[2].addEventListener('click', function() {
     homeScoreEl.textContent = homeScore;
 });
 
-guestButtons[0].addEventListener('click', function() {
-    guestScore += 1;
-    guestScoreEl.textContent = guestScore;
+awayButtons[0].addEventListener('click', function() {
+    awayScore += 1;
+    awayScoreEl.textContent = awayScore;
 });
 
 
-guestButtons[1].addEventListener('click', function() {
-    guestScore += 2;
-    guestScoreEl.textContent = guestScore;
+awayButtons[1].addEventListener('click', function() {
+    awayScore += 2;
+    awayScoreEl.textContent = awayScore;
 });
 
 
-guestButtons[2].addEventListener('click', function() {
-    guestScore += 3;
-    guestScoreEl.textContent = guestScore;
+awayButtons[2].addEventListener('click', function() {
+    awayScore += 3;
+    awayScoreEl.textContent = awayScore;
 });
